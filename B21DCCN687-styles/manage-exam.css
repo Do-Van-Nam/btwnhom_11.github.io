@@ -1,0 +1,111 @@
+.prev-page {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.prev-page:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #cc0d00;
+}
+
+.manage-exam-area {
+  width: 80vw;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.manage-general-box {
+  width: 100%;
+  height: 170px;
+  padding: 20px;
+  margin-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.manage-general-row {
+  margin-bottom: 4px;
+}
+
+.manage-general-row > span:first-child {
+  width: 130px;
+}
+
+.manage-general-box:hover {
+  cursor: pointer;
+}
+
+.manage-general-row {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.question-box:hover {
+  cursor: pointer;
+  background-color: #f0f2f5;
+}
+
+.manage-list-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.edit-answer {
+  width: 92%;
+  height: 100px;
+}
+
+.edit-popup-button {
+  padding: 8px 20px;
+}
+
+.popup-general-content {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.popup-general-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.popup-general-input {
+  width: 100%;
+  margin: 0;
+  padding: 8px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.popup-general-type {
+  height: 35px;
+  border: 1px solid #d9d9d9;
+}
+.signout-link{
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 85%;
+  color: #fff;
+  padding-left: 10px;
+  border-left: 1px solid rgb(120, 112, 112);
+}
+
+.signout-link:hover{
+  text-decoration: none;
+  margin-left: 85%;
+  color: rgb(120, 112, 112);
+  text-decoration: underline;
+}

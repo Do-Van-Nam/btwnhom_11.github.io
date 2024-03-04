@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: grid;
+  position: relative;
+}
+
+header {
+  height: 48px;
+  background-color: #001529;
+  z-index: 99;
+}
+
+.header-container {
+  height: 100%;
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header-container > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 10px;
+  height: 110vh;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.body {
+  display: flex;
+}
+
+.menu {
+  position: fixed;
+  
+  top: 0;
+  height: 150vh;
+  background-color: #001529;
+  padding-top: 48px;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  width: 180px;
+  padding: 10px 0 10px 20px;
+  color: #ffffffa6;
+}
+
+.menu > .active {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item > span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  height: 110vh;
+}
+
+main {
+  padding: 20px;
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  margin-left: 240px;
+  margin-top: 20px;
+}
+button {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+button:hover {
+  background-color: #45a049; 
+}
+.button {
+  margin-left: 880px;
+}
+.Name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.Name h2 {
+  margin: 0 auto;
+}
+.Name #timer {
+  margin: 0; 
+}
+.quiz {
+  margin-left: 50px;
+}
+#resultBtn {
+  margin-left: 50px ;
+}
+.question-container {
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px; /* Thêm padding để tạo khoảng cách giữa nội dung và viền */
+  margin-left: 270px; /* Di chuyển sang phải 400px */
+}
+
+.question-container p {
+  margin-bottom: 10px;
+}
+
+.question-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.question-container input[type="radio"] {
+  margin-right: 5px;
+}
+.Result h2 {
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.Result #score {
+  text-align: center; /* Căn giữa điểm */
+}
+
+.Result #result {
+  text-align: center; /* Căn giữa kết quả */
+}
+
+.Result button {
+  display: block; /* Hiển thị nút ở giữa */
+  margin: 20px auto; /* Canh giữa nút */
+}
+/* Thêm phần CSS mới để tạo khung cho phần kết quả */
+.Result {
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -60px; /* Di chuyển xuống phía dưới 20px */
+  left: 500px; /* Di chuyển sang bên trái 20px */
+  max-width: 600px;
+}
+
+.Result h2 {
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.Result #score {
+  text-align: center; /* Căn giữa điểm */
+}
+
+.Result #result {
+  text-align: center; /* Căn giữa kết quả */
+}
+
+.Result button {
+  display: block; /* Hiển thị nút ở giữa */
+  margin: 20px auto; /* Canh giữa nút */
+}
+.review-button {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./B21DCCN687-styles/styles.css" />
+    <link rel="stylesheet" href="./B21DCCN687-styles/exam.css" />
+    <script src="./B21DCCN687-js/main.js"></script>
+    <title>Hệ thống quản lý</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="header-container">
+          <img class="logo" src="./favicon.ico" />
+          <h1>PTIT EXAM</h1>
+          <a class="signout-link" href="index.html">Thoát</a>
+        </div>
+      </header>
+      <div class="body">
+        <nav class="menu">
+          <div class="menu-item active">
+            <span>Quản lý kỳ thi</span>
+          </div>
+          <div class="menu-item"
+          onclick="redirectToNewPage('acc_manager.html')"
+          >
+            <span>Quản lý sinh viên</span>
+          </div>
+          <div class="menu-item"
+          onclick="redirectToNewPage('statistic.html')"
+          >
+            <span>Thống kê</span>
+          </div>
+        </nav>
+        <main>
+          <div class="main-container">
+            <div class="exam-area">
+              <div class="exam-container">
+                <div>
+                  <span style="font-size: 16px; font-weight: 600"
+                    >Quản lý kì thi</span
+                  >
+                </div>
+                <div
+                  class="button"
+                  id="create-exam-button"
+                  style="margin-top: 20px"
+                  onclick="redirectToNewPage('create-exam.html')"
+                >
+                  Thêm mới
+                </div>
+                <table class="exam-table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Tên kì thi</th>
+                      <th>Loại</th>
+                      <th>Số câu</th>
+                      <th>Ngày bắt đầu</th>
+                      <th>Ngày kết thúc</th>
+                      <th>Mô tả</th>
+                    </tr>
+                  </thead>
+                  <tbody id="exam-list"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", loadExamPage());
+  </script>
+</html>

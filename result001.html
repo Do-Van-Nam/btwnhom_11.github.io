@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Bài Thi</title>
+    <link rel="stylesheet" href="styles001.css">
+    <script src="script001.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-container">
+                <img class="logo" src="favicon.ico" alt="Logo"
+                onclick="redirectToNewPage('user-main.html')"
+                >
+                <h1>PTIT S-LINK</h1>
+            </div>
+        </header>
+        <div class="body">
+            <nav class="menu">
+                <div class="menu-item active">
+                    <span>Trang Kết Quả</span>
+                </div>
+            </nav>
+            <main>
+                <div class="Result">
+                <h2>Kết Quả Bài Thi</h2>
+                <div id="score"></div>
+                <div id="result"></div> 
+                </div>
+                <button class="review-button" onclick="reviewAnswers()">Xem Lại Câu Trả Lời</button>
+                <!-- Thêm phần hiển thị câu trả lời -->
+                <div id="answers" style="display:none;"></div>
+            </main>
+        </div>
+        <script>
+            var score = sessionStorage.getItem('score');
+            var totalQuestions = 10; // Tổng số câu hỏi
+            let result = score 
+            document.getElementById('score').innerText = "Kết quả: " + result + "/" + totalQuestions; // Hiển thị điểm / tổng
+            document.getElementById('result').innerText = "Điểm: " + result.toFixed(2); // Hiển thị điểm
+        </script>
+    </div>
+</body>
+</html>

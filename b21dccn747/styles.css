@@ -1,0 +1,322 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f0f2f5;
+}
+
+.page {
+  display: grid;
+  position: relative;
+}
+
+header {
+  height: 3rem;
+  background-color: #001529;
+  z-index: 99;
+}
+
+
+.header-container {
+  height: 100%;
+  margin: 0 0rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.header-container > h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 12px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.body {
+  display: flex;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  background-color: #001529;
+  padding-top: 3rem;
+  z-index: 9;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  width: 12rem;
+  padding: .5rem 0 .5rem 1.2rem;
+  color: #ffffffa6;
+}
+
+.menu > .active {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-item > span {
+  font-size: 1rem;
+}
+
+main {
+  height: 90vh;
+  width:100%;
+  position: absolute;
+  display: block;
+  justify-content: center;
+  background: #f0f2f5;
+  overflow-y: scroll;
+}
+.tke-main{
+  height: 90vh;
+  width:87%;
+  position: absolute;
+  left: 200px;
+  display: block;
+  justify-content: center;
+  background: #f0f2f5;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+  width: 0px;
+}
+
+.searchbox{
+  align-items: center;
+  width: 35rem;
+  background: #fff;
+  border-radius: 5px;
+  margin: 1.2rem auto auto auto ;
+}
+.row{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+input{
+  flex: 1;
+  height: 2rem;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+button .fa-solid{
+  width: 1.2rem;
+  font-size: 1rem;
+  color:#555;
+  cursor: pointer;
+}
+.TieuDe{
+  display: flex;
+  margin: 2rem 1rem auto 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid rgba(0,0,0,.2);
+  font-size: 1.5rem;  
+}
+.box-container{
+  display: grid;
+  padding-top: 0.5rem;
+  grid-template-columns: repeat(auto-fill,minmax(20rem,2fr));
+  grid-template-rows: repeat(auto-fill,minmax(120px,1fr));
+  gap: 0.8rem;
+  margin: 1rem;
+}
+.box{
+  background-color:  #fff;
+  padding: .5em;
+  border-radius: .3rem;
+}
+.box > .TenBaiThi{
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.box > .Content{
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.table-container{
+  background-color: #fff;
+  height: auto;
+  width: 80rem;
+  margin: .5rem;
+  padding:0;
+  display: block;
+  border-radius: 5px;
+}
+.table-container-header{
+  margin: 2rem 0rem auto 0rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  font-size: 1.5rem;  
+}
+.table-container-body{
+  margin: .5rem 1rem 1rem 1rem;
+  padding: 1rem .5rem;
+}
+.pdf-btn{
+  font-size: 14px;
+  background-color: rgb(193, 41, 41);
+  color: #fff;
+  padding: .6rem 1rem;
+  border-radius: .1rem;
+}
+.pdf-btn:active {
+  transform: scale(0.95);
+}
+.pdf-btn:hover {
+  background-color: rgb(193, 95, 95);
+  cursor: pointer;
+}
+table{
+  width:  100%;
+  margin: .5rem auto;
+}
+
+table th{
+  padding: 1rem .5rem;
+  background-color: #fafafa;
+  border-right:  1px solid #f0f0f0;
+  border-width: 1px;
+}
+
+table td{
+  padding: 1rem 1rem;
+  width: 18%;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.test {
+  background-color: black;
+}
+select{
+  padding: .3rem .4rem;
+  text-align: center;
+  font-size: .9rem;
+  color: #555;
+  border-radius: 2px;
+  border: .5px solid #818080;
+}
+
+select:hover{
+  border-color: #cc0d00;
+}
+option{
+  padding: .5rem;
+}
+
+option:active{
+  background-color: red;
+}
+.popup-chart{
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  height: 480px;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.popup-chart .open{
+  opacity: 1;
+  z-index: 999;
+}
+
+.close-button{
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 1px solid #FF4B2B;
+  background-color: red;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  box-shadow: 0 10px 25px rgba(229, 29, 32, 0.6);
+  position: absolute;
+  bottom: 2rem;
+  float: right;
+}
+.close-button:hover{
+  cursor: pointer;
+  background-color: rgb(255, 78, 78);
+}
+.chart{
+  margin: 0 auto;
+}
+
+.box-container a{
+  text-decoration: none;
+  color: #001529;
+}
+
+.signout-link{
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  margin-left: 85%;
+  color: #fff;
+  padding-left: 10px;
+  border-left: 1px solid rgb(120, 112, 112);
+}
+
+.signout-link:hover{
+  text-decoration: none;
+  margin-left: 85%;
+  color: rgb(120, 112, 112);
+  text-decoration: underline;
+}

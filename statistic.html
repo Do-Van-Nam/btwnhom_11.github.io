@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/983c1d6e7e.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ["Điểm số", "Số lượng"],
+              ["0.5", 50],
+              ["1", 70],
+              ["1.5", 50],
+              ["2", 20],
+              ["2.5", 50],
+              ["3", 30],
+              ["3.5", 50],
+              ["4", 45],
+              ["4.5", 53 ],
+              ["5", 55 ],
+              ["5.5", 50 ],
+              ["6", 89 ],
+              ["6.5", 55 ],
+              ["7", 34 ],
+              ["7.5", 50 ],
+              ["8", 22 ],
+              ["8.5", 11 ],
+              ["9", 5 ],
+              ["9.5", 2 ],
+              ["10", 1 ]
+            ]);
+      
+            var view = new google.visualization.DataView(data);
+            var options = {
+              title: "Phổ điểm",
+              width: 1000,
+              height: 400,
+              bar: {groupWidth: "25%"},
+              legend: { position: "none" },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+            chart.draw(view, options);
+        }
+        </script>
+        <link rel="stylesheet" href="./b21dccn747/styles.css" />
+        <title>Thống kê</title>
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div class="header-container">
+                    <img style="margin: 0 0 0 2rem; width: auto;" class="logo" src="./b21dccn747/favicon.ico" />
+                    <h1>PTIT EXAM</h1>
+                    <a class="signout-link" href="index.html">Thoát</a>
+                </div>
+            </header>
+            <div class="body">
+                <nav class="menu">
+                    <div class="menu-item"
+                    onclick="window.location.href='exam.html'"
+                    >
+                        <span>Quản lý kỳ thi</span>
+                    </div>
+                    <div class="menu-item"
+                    onclick="window.location.href='acc_manager.html'"
+                    >
+                        <span>Quản lý sinh viên</span>
+                    </div>
+                    <div class="menu-item active">
+                        <span>Thống kê</span>
+                    </div>
+                </nav>
+                <main class="tke-main">
+                    <div class ="searchbox">
+                        <div class="row">
+                            <input type="text" name="search-box" id="search-box" placeholder="Tìm kiếm bài thi" data-search>
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="table-container" style="background-color: #fff;">
+                        <div class = "table-container-header">
+                            <h4>&nbsp;&nbsp;&nbsp;&nbsp;Bảng thống kê các kì thi</h4>
+                        </div>
+                        <div class ="table-container-body" >
+                            <button type="button" class="pdf-btn">
+                                <i style="padding-right: .5rem" class="fa-regular fa-file-pdf"></i>
+                                Xuất pdf</button>
+                            <h4 style="margin: 0px 0px 8px 50px; float: right;">
+                                Tổng số:
+                                <input class="ant-input" type="text" id="cnt-exam" style="border: 1px solid #948f8f;text-align: center;width: 90px; font-weight: 700; font-size: 16px; margin-left: 10px; color: rgb(204, 13, 0);">
+                            </h4>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Mã bài thi</th>
+                                            <th>Tên bài thi</th>
+                                            <th>Số lượt làm bài</th>
+                                            <th>Tỷ lệ hoàn thành (%)</th>
+                                            <th>Điểm trung bình</th>
+                                            <th>Phổ điểm</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="data-output">                                 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-chart">
+                        <div id="columnchart_values" class = "chart" ></div>
+                        <button id="close-chart" class="close-button">Close</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script src="./b21dccn747//statistic.js"></script>
+  </body>
+</html>
