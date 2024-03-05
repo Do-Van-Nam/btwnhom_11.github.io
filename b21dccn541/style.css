@@ -584,6 +584,10 @@ header {
   transition: .2s ease-in-out;
   align-self: left;
   float: left;
+text-align: center;
+font-size: 40px;
+
+  
 }
 
 .export__file .export__file-btn:hover { 
